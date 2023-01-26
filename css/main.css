@@ -201,6 +201,11 @@ body {
   min-width: 30px;
 }
 
+.skill__aside {
+  margin-left: 65px;
+  margin-top: 20px;
+}
+
 .section__label {
   border-bottom: 1px solid black;
   flex-grow: 2;
@@ -266,8 +271,17 @@ body {
 
 .experience__content {
   margin: 10px 0 10px 70px;
-  text-indent: 25px;
   text-align: justify;
+}
+
+.experience__content_compact {
+  margin-bottom: 0;
+}
+
+.experience__bullet {
+  margin-left: 70px;
+  margin-top: 0;
+  padding-left: 15px;
 }
 
 .education__title {

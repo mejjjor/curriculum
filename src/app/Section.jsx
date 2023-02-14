@@ -10,10 +10,10 @@ export default function Section({
   removeAll = null,
 }) {
   return (
-    <section className={"items-center p-4 pb-0 " + className}>
-      <div className="flex">
+    <section className={"items-center p-4 pb-0" + className}>
+      <div className="flex ml-2">
         <Icon size={40} className="text-teal-700" />
-        <div className="group/title flex items-center justify-between pl-4 border-b-2 border-teal-900 w-full mx-4">
+        <div className="group/title flex items-center justify-between pl-4 border-b-2 border-teal-900 w-full ml-4 mr-6">
           <h2 className="text-2xl font-bold">{title}</h2>
           <div className="group/icon invisible group-hover/title:visible flex gap-1">
             {showAll && (
@@ -40,7 +40,7 @@ export default function Section({
           </div>
         </div>
       </div>
-      <div className="pl-14 mt-3 pr-4">{children}</div>
+      <div className="pl-16 pr-6">{children}</div>
     </section>
   );
 }

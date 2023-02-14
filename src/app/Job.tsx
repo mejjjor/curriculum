@@ -9,7 +9,7 @@ export default function Skill({ data, remove, addSkills }) {
     duration += " mois";
   }
   return (
-    <div className="group/job mb-6 last-of-type:mb-0">
+    <div className="group/job pt-6 last-of-type:mb-0 break-inside-avoid-page">
       <div className="float-left flex flex-col items-center -ml-14 mt-1">
         <div>{dayjs(data.start).format("MM/YY")}</div>
         <div className="text-vertical tracking-tight ">·····</div>

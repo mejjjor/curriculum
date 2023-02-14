@@ -77,19 +77,19 @@ export default function Page() {
         <header className="animate-enter1 bg-stone-200">
           <h1 className="bg-teal-700 text-stone-200 text-center h-7 text-xl font-bold pl-32">
             Architecte logiciel{" "}
-            <span className="hidden md:inline">
+            <span className="hidden md:inline print:inline">
               – Ingénieur de recherche en informatique
             </span>
           </h1>
-          <div className="flex  md:relative py-4 md:py-0">
+          <div className="flex  md:relative print:relative py-4 md:py-0 print:py-0">
             <div className="mt-4 md:mt-0">
               <Image
                 alt="Photo du profil"
                 src={avatar}
-                className="md:absolute -top-5 rounded-full ml-2 w-24 h-24 object-cover"
+                className="md:absolute print:absolute -top-5 rounded-full ml-2 w-24 h-24 object-cover"
               />
             </div>
-            <div className="pl-4 md:pl-32 py-2 px-4 flex flex-col md:flex-row justify-between w-full">
+            <div className="pl-4 md:pl-32 print:pl-32 py-2 px-4 flex flex-col md:flex-row print:flex-row justify-between w-full">
               <div className="flex flex-col justify-center">
                 <div className="font-bold text-2xl">Erik AOUIZERATE</div>
                 <div className="text-lg">{yearsOld} ans</div>
@@ -119,22 +119,16 @@ export default function Page() {
             </div>
           </div>
         </header>
-        <main
-          className={cx("bg-stone-100 h-full", {
-            ["print:bg-white"]: isForPrint,
-          })}
-        >
+        <main className={cx(" pt-2 bg-stone-100 h-full print:bg-white")}>
           <Section
             Icon={IconColorSwatch}
             title="Compétences"
-            className={cx("animate-enter1 bg-stone-100", {
-              ["print:bg-white"]: isForPrint,
-            })}
+            className={cx("animate-enter1 bg-stone-100 print:bg-white")}
             showAll={skillsActions.showAll}
             reset={skillsActions.reset}
             removeAll={skillsActions.removeAll}
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-[1px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 print:grid-cols-4 gap-[1px] pt-6">
               <Skill
                 title="Frontend"
                 data={skills.frontend}
@@ -178,21 +172,22 @@ export default function Page() {
             title="Formations"
             className="animate-enter1"
           >
-            {schoolsData.map((school, index) => (
-              <div key={index} className="mb-2 last-of-type:mb-0">
-                <div className="float-left flex flex-col items-center -ml-14 mt-1">
-                  <div>{dayjs(school.year).format("YYYY")}</div>
+            <div className="pt-6">
+              {schoolsData.map((school, index) => (
+                <div key={index} className="mb-2 last-of-type:mb-0">
+                  <div className="float-left flex flex-col items-center -ml-14 ">
+                    <div>{dayjs(school.year).format("YYYY")}</div>
+                  </div>
+                  <h3 className="text-[0.88rem] font-bold">{school.title}</h3>
                 </div>
-                <h3 className="text-[0.9rem] font-bold">{school.title}</h3>
-              </div>
-            ))}
+              ))}
+            </div>
           </Section>
         </main>
-        <div className="bg-teal-700 h-4 sticky top-[29.7cm] mt-2"></div>
       </div>
       <div className="print:hidden">
         <div className="absolute -z-10 top-[29.7cm] w-full border border-dashed border-1"></div>
-        <div className="fixed bottom-0 flex flex-col m-4 ml-[calc(calc(calc(100vw-21cm)/2)+21cm)] ">
+        <div className="fixed bottom-0 flex flex-col m-4 ml-[calc(calc(calc(100vw-21cm)/2)+21cm)]">
           <IconShare
             className="rounded-full cursor-pointer hover:bg-stone-200 p-2"
             onClick={() => {

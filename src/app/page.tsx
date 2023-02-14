@@ -107,11 +107,11 @@ export default function Page() {
                 </div>
                 <div className="flex items-center justify-end">
                   <a
-                    href="https://erik.aouizerate.me"
+                    href="https://erik-aouizerate.me"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    erik.aouizerate.me
+                    erik-aouizerate.me
                   </a>
                   <IconWorld className="ml-1 text-teal-600" />
                 </div>

@@ -15,6 +15,7 @@ const data = [
   {
     label: labels.git,
     icon: git,
+    default: true,
   },
   {
     label: labels.github,
@@ -27,10 +28,12 @@ const data = [
   {
     label: labels.anglais,
     icon: english,
+    default: true,
   },
   {
     label: labels.scrum,
     icon: kanban,
+    default: true,
   },
   {
     label: labels.kanban,
@@ -47,14 +50,17 @@ const data = [
   {
     label: labels.linux,
     icon: linux,
+    default: true,
   },
   {
     label: labels.mac,
     icon: macos,
+    default: true,
   },
   {
     label: labels.windows,
     icon: windows,
+    default: true,
   },
 ];
 

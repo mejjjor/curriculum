@@ -76,40 +76,45 @@ export default function Page() {
       >
         <header className="animate-enter1 bg-stone-200">
           <h1 className="bg-teal-700 text-stone-200 text-center h-7 text-xl font-bold pl-32">
-            Architecte logiciel – Ingénieur de recherche en informatique
+            Architecte logiciel{" "}
+            <span className="hidden md:inline">
+              – Ingénieur de recherche en informatique
+            </span>
           </h1>
-          <div className="relative">
-            <Image
-              alt="Photo du profil"
-              src={avatar}
-              className="absolute -top-5 rounded-full ml-2 w-24 h-24 object-cover"
-            />
-          </div>
-          <div className="pl-32 py-2 px-4 flex justify-between">
-            <div className="flex flex-col justify-center">
-              <div className="font-bold text-2xl">Erik AOUIZERATE</div>
-              <div className="text-lg">{yearsOld} ans</div>
+          <div className="flex  md:relative py-4 md:py-0">
+            <div className="mt-4 md:mt-0">
+              <Image
+                alt="Photo du profil"
+                src={avatar}
+                className="md:absolute -top-5 rounded-full ml-2 w-24 h-24 object-cover"
+              />
             </div>
-            <div className="text-lg leading-5">
-              <div className="flex items-center justify-end">
-                <a href="tel:+330601994602">06 01 99 46 02 </a>
-                <IconDeviceMobile className="ml-1 text-teal-600" />
+            <div className="pl-4 md:pl-32 py-2 px-4 flex flex-col md:flex-row justify-between w-full">
+              <div className="flex flex-col justify-center">
+                <div className="font-bold text-2xl">Erik AOUIZERATE</div>
+                <div className="text-lg">{yearsOld} ans</div>
               </div>
-              <div className="flex items-center justify-end">
-                <a href="mailto:erik.aouizerate@mintset.io">
-                  erik.aouizerate@mintset.io
-                </a>
-                <IconMail className="ml-1 text-teal-600" />
-              </div>
-              <div className="flex items-center justify-end">
-                <a
-                  href="https://erik.aouizerate.me"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  erik.aouizerate.me
-                </a>
-                <IconWorld className="ml-1 text-teal-600" />
+              <div className="text-lg leading-5">
+                <div className="flex items-center justify-end">
+                  <a href="tel:+330601994602">06 01 99 46 02 </a>
+                  <IconDeviceMobile className="ml-1 text-teal-600" />
+                </div>
+                <div className="flex items-center justify-end">
+                  <a href="mailto:erik.aouizerate@mintset.io">
+                    erik.aouizerate@mintset.io
+                  </a>
+                  <IconMail className="ml-1 text-teal-600" />
+                </div>
+                <div className="flex items-center justify-end">
+                  <a
+                    href="https://erik.aouizerate.me"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    erik.aouizerate.me
+                  </a>
+                  <IconWorld className="ml-1 text-teal-600" />
+                </div>
               </div>
             </div>
           </div>
@@ -129,7 +134,7 @@ export default function Page() {
             reset={skillsActions.reset}
             removeAll={skillsActions.removeAll}
           >
-            <div className="grid grid-cols-4 gap-[1px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-[1px]">
               <Skill
                 title="Frontend"
                 data={skills.frontend}

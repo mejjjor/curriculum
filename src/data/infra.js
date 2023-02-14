@@ -22,11 +22,13 @@ const data = [
     label: labels.docker,
     icon: docker,
     link: "https://www.docker.com/",
+    default: true,
   },
   {
     label: labels.webpack,
     icon: webpack,
     link: "https://webpack.js.org/",
+    default: true,
   },
   {
     label: labels.vite,
@@ -43,6 +45,7 @@ const data = [
   {
     label: labels.aws,
     icon: aws,
+    default: true,
   },
   {
     label: labels.vercel,
@@ -59,6 +62,7 @@ const data = [
   {
     label: labels.heroku,
     icon: heroku,
+    default: true,
   },
   {
     label: labels.jest,
@@ -67,6 +71,7 @@ const data = [
   {
     label: labels.cypress,
     icon: cypress,
+    default: true,
   },
   {
     label: labels.gcp,
@@ -75,6 +80,7 @@ const data = [
   {
     label: labels.capacitor,
     icon: capacitorjs,
+    default: true,
   },
 ];
 

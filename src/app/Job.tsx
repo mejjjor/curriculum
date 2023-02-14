@@ -38,7 +38,7 @@ export default function Skill({ data, remove, addSkills }) {
       </h3>
       <p className="indent-6">{data.description}</p>
       <ul className="list-disc ml-6 my-2">
-        {data.tasks.map((task, index) => (
+        {data.tasks?.map((task, index) => (
           <li key={index}>{task}</li>
         ))}
       </ul>

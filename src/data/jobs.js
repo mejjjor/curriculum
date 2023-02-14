@@ -167,6 +167,26 @@ const data = [
       labels.linux,
     ],
   },
+  {
+    start: "10/01/2014",
+    end: "05/01/2015",
+    title: "Ingénieur de recherche à Middleware factory – Paris – ",
+    description: `J'ai participé à un projet de recherche afin de créer un moteur de persistance orienté objet en java 8. J'ai notamment développé le module d’immutabilité des objets et mis en place les contraintes d’intégrité du système.`,
+    tools: [labels.java],
+  },
+  {
+    start: "06/01/2013",
+    end: "09/01/2014",
+    title: "Analyste développeur à CGI à CGI – Grenoble – ",
+    description: `Au sein du département R&D, j'ai participé à la conception et à la réalisation d'une application de test AngularJs appliquée à un moteur générique de workflow en PL/SQL. J'ai aussi préparé et animé les comités de pilotage ainsi qu'assuré le support utilisateur en anglais.`,
+    tools: [
+      labels.javascript,
+      labels.angular,
+      labels.plsql,
+      labels.scrum,
+      labels.anglais,
+    ],
+  },
 ];
 
 export default data;

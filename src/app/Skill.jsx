@@ -21,6 +21,7 @@ export default function Skill({ title, data, removeSkill }) {
                 alt={skill.label}
                 src={skill.icon}
                 width="25"
+                height="25"
               />
               <div className="ml-2 text-sm self-center">
                 {skill.link ? (

@@ -1,4 +1,5 @@
 import "~/styles/globals.css";
+import { AnalyticsWrapper } from "./Analytics";
 
 export default async function Layout({ children }) {
   return (
@@ -12,6 +13,7 @@ export default async function Layout({ children }) {
       </head>
       <body className="w-screen max-w-full bg-neutral-50 print:bg-white">
         {children}
+        <AnalyticsWrapper />
       </body>
     </html>
   );

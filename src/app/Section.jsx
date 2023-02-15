@@ -10,8 +10,8 @@ export default function Section({
   removeAll = null,
 }) {
   return (
-    <section className={"items-center p-4 pb-0" + className}>
-      <div className="flex ml-2">
+    <section className={"items-center p-4 pb-0 " + className}>
+      <div className="flex ml-2 break-after-avoid">
         <Icon size={40} className="text-teal-700" />
         <div className="group/title flex items-center justify-between pl-4 border-b-2 border-teal-900 w-full ml-4 mr-6">
           <h2 className="text-2xl font-bold">{title}</h2>

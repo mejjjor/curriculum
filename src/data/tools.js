@@ -8,6 +8,8 @@ import linux from "public/icons/linux.png";
 import rgpd from "public/icons/rgpd.png";
 import macos from "public/icons/macos.jpg";
 import windows from "public/icons/windows.webp";
+import rocky from "public/icons/rocky.png"
+import ubuntu from "public/icons/ubuntu.svg"
 
 import labels from "./labels";
 
@@ -61,6 +63,16 @@ const data = [
     label: labels.windows,
     icon: windows,
     default: true,
+  },
+  {
+    label: labels.ubuntu,
+    icon: ubuntu,
+    default: false,
+  },
+  {
+    label: labels.rocky,
+    icon: rocky,
+    default: false,
   },
 ];
 

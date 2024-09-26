@@ -1,5 +1,6 @@
 import node from "public/icons/node.webp";
 import python from "public/icons/python.webp";
+import django from "public/icons/django.svg";
 import php from "public/icons/php.png";
 import java from "public/icons/java.png";
 import db from "public/icons/db.png";
@@ -75,6 +76,10 @@ const data = [
     label: labels.express,
     icon: expressjs,
     default: true,
+  },
+  {
+    label: labels.django,
+    icon: django,
   },
   {
     label: labels.symphony,

@@ -15,9 +15,11 @@ const labels = {
   css3: "CSS3",
   cordova: "Cordova",
   d3: "D3",
+  ol: "OpenLayers",
 
   node: "Node",
   python: "Python",
+  django: "Django",
   php: "Php",
   java: "Java",
   plsql: "PL/SQL",
@@ -35,10 +37,13 @@ const labels = {
   db: "SQL / NoSQL",
 
   docker: "Docker",
+  swarm: "Swarm",
   webpack: "Webpack",
   vite: "Vite",
   circleci: "CircleCI",
   gitlabci: "GitlabCI",
+  ansible: "Ansible",
+  awx: "Awx",
   aws: "Aws",
   vercel: "Vercel",
   netlify: "Netlify",
@@ -48,6 +53,8 @@ const labels = {
   cypress: "Cypress",
   gcp: "GCP",
   capacitor: "Capacitor",
+  keycloak: "Keycloak",
+  wso2: "Wso2",
 
   git: "Git",
   github: "Github",
@@ -60,6 +67,8 @@ const labels = {
   linux: "Linux",
   mac: "MacOs",
   windows: "Windows",
+  rocky: "Rocky",
+  ubuntu: "Ubuntu",
 };
 
 export default labels;

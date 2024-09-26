@@ -1,6 +1,7 @@
 import jest from "public/icons/jest.webp";
 import cypress from "public/icons/cypress.png";
 import docker from "public/icons/docker.png";
+import dockerSwarm from "public/icons/docker-swarm.webp";
 import webpack from "public/icons/webpack.jpg";
 import vite from "public/icons/vite.webp";
 import circleci from "public/icons/circleci.png";
@@ -9,6 +10,10 @@ import gitlab from "public/icons/gitlab.webp";
 import aws from "public/icons/AWS.webp";
 import vercel from "public/icons/vercel.svg";
 
+import keycloak from "public/icons/keycloak.svg";
+import wso2 from "public/icons/wso2.svg";
+import ansible from "public/icons/ansible.svg";
+import awx from "public/icons/awx.png";
 import netlify from "public/icons/netlify.png";
 import clevercloud from "public/icons/clevercloud.webp";
 import heroku from "public/icons/heroku.webp";
@@ -24,6 +29,11 @@ const data = [
     link: "https://www.docker.com/",
     default: true,
   },
+  {
+    label: labels.swarm,
+    icon: dockerSwarm,
+  },
+
   {
     label: labels.webpack,
     icon: webpack,
@@ -41,6 +51,15 @@ const data = [
   {
     label: labels.gitlabci,
     icon: gitlab,
+  },
+  {
+    label: labels.ansible,
+    icon: ansible,
+    default: true,
+  },
+  {
+    label: labels.awx,
+    icon: awx,
   },
   {
     label: labels.aws,
@@ -62,7 +81,6 @@ const data = [
   {
     label: labels.heroku,
     icon: heroku,
-    default: true,
   },
   {
     label: labels.jest,
@@ -71,7 +89,6 @@ const data = [
   {
     label: labels.cypress,
     icon: cypress,
-    default: true,
   },
   {
     label: labels.gcp,
@@ -81,6 +98,15 @@ const data = [
     label: labels.capacitor,
     icon: capacitorjs,
     default: true,
+  },
+  {
+    label: labels.keycloak,
+    icon: keycloak,
+    default: true,
+  },
+  {
+    label: labels.wso2,
+    icon: wso2,
   },
 ];
 
